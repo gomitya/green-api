@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<meta charSet="UTF-8"/>
+	<title>GreenAPI TEST</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
+  </head>
+  <body>
+	<div class="space">
+	  <div class="col">
+		<div class="grp">
+		  <div class="inp">
+			<input type="text" id="apiUrl" placeholder=" ">
+			<label for="apiUrl">apiUrl</label>	  
+		  </div>
+		  <div class="inp">
+			<input type="text" id="idInstance" placeholder=" ">
+			<label for="idInstance">idInstance</label>
+		  </div>
+		  <div class="inp">
+			<input type="text" id="apiToken" placeholder=" ">
+			<label for="apiToken">apiTokenInstance</label>
+		  </div>
+		</div>
+
+		<div class="grp">
+		  <div class="inp">
+			<button id="getSettings">getSettings</button>
+		  </div>
+		  <div class="inp">
+			<button id="getStateInstance">getStateInstance</button>
+		  </div>
+		</div>
+
+		<div class="grp">
+		  <div class="inp">
+			<input type="text" id="chatIdMsg" placeholder=" ">
+			<label for="trgtIdMsg">Target ChatId</label>
+		  </div>
+		  <div class="inp">
+			<input type="text" id="textMsg" placeholder=" ">
+			<label for="textMsg">Message text</label>
+		  </div>
+		  <div class="inp">
+			<button id="sendMsg">sendMessage</button>
+		  </div>
+		</div>
+
+		<div class="grp">
+		  <div class="inp">
+			<input type="text" id="chatIdFile" placeholder=" ">
+			<label for="trgtIdFile">Target ChatId</label>
+		  </div>
+		  <div class="inp">
+			<input type="text" id="fileUrl" placeholder=" ">
+			<label for="fileUrl">file Url</label>
+		  </div>
+		  <div class="inp">
+			<button id="sendFile">sendFileByUrl</button>
+		  </div>		  
+		</div>
+	  </div>
+	  <div class="col">
+		<h1 id="answerAlert">Ответ: <span id="answerStatus" /></h1>
+		<textarea id="answerBody" readonly></textarea>
+	  </div>
+	</div>
+  </body>
+</html>
